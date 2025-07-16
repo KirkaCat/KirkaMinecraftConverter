@@ -1,0 +1,13 @@
+{
+    "parent": "kirka:block/kirka_block",
+    "elements": [
+        {
+            "from": [0, 0, 15],
+            "to": [16, 16, 15],
+            "rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 15]},
+            "faces": {
+                "north": {"uv": [10, 4, 9, 5], "texture": "#textures"}
+            }
+        }
+    ]
+}

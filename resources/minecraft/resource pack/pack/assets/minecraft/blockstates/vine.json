@@ -1,0 +1,40 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft:block/vine_facing_south",
+        "x": 270
+      },
+      "when": { "up": "true" }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/vine_facing_south"
+      },
+      "when": {
+        "OR": [
+            { "north": "true" },
+            { "north": "false", "east": "false", "south": "false", "west": "false", "up": "false" }
+        ]
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/vine_facing_west"
+      },
+      "when": { "east": "true" }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/vine_facing_north"
+      },
+      "when": { "south": "true" }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/vine_facing_east"
+      },
+      "when": { "west": "true" }
+    }
+  ]
+}

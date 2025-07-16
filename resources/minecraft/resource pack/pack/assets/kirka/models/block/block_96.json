@@ -1,0 +1,19 @@
+{
+    "parent": "kirka:block/kirka_block",
+    "elements": [
+        {
+            "from": [0, 0, 1],
+            "to": [16, 16, 1],
+            "rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 1]},
+            "faces": {
+                "south": {"uv": [9, 4, 10, 5], "texture": "#textures"}
+            }
+        }
+    ],
+    "gui_light": "front",
+    "display": {
+        "gui": {
+            "scale": [0.95, 0.95, 0.95]
+        }
+    }
+}

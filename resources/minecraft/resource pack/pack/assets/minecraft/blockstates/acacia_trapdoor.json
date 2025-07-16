@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "facing=east,half=bottom,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_bottom",
+      "y": 90
+    },
+    "facing=east,half=bottom,open=true": {
+      "model": "kirka:block/block_99"
+    },
+    "facing=east,half=top,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_top",
+      "y": 90
+    },
+    "facing=east,half=top,open=true": {
+      "model": "kirka:block/block_99"
+    },
+    "facing=north,half=bottom,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_bottom"
+    },
+    "facing=north,half=bottom,open=true": {
+      "model": "kirka:block/block_97"
+    },
+    "facing=north,half=top,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_top"
+    },
+    "facing=north,half=top,open=true": {
+      "model": "kirka:block/block_97"
+    },
+    "facing=south,half=bottom,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_bottom",
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true": {
+      "model": "kirka:block/block_96"
+    },
+    "facing=south,half=top,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_top",
+      "y": 180
+    },
+    "facing=south,half=top,open=true": {
+      "model": "kirka:block/block_96"
+    },
+    "facing=west,half=bottom,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_bottom",
+      "y": 270
+    },
+    "facing=west,half=bottom,open=true": {
+      "model": "kirka:block/block_98"
+    },
+    "facing=west,half=top,open=false": {
+      "model": "minecraft:block/acacia_trapdoor_top",
+      "y": 270
+    },
+    "facing=west,half=top,open=true": {
+      "model": "kirka:block/block_98"
+    }
+  }
+}

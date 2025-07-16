@@ -1,0 +1,23 @@
+{
+  "name": "kirka-minecraft-converter",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "generate-lang": "generate-lang.sh",
+    "generate-json-nbt": "generate-json-nbt.sh"
+  },
+  "dependencies": {
+    "node-polyfill-webpack-plugin": "^4.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.6",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}

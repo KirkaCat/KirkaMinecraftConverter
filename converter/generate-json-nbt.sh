@@ -1,0 +1,1 @@
+node -e 'require("./build/generate/generateJsonNbt")'

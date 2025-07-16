@@ -1,0 +1,18 @@
+{
+	"parent": "kirka:block/kirka_block",
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
+			"faces": {
+				"north": {"uv": [9.6875, 1.5625, 9.3125, 1.9375], "texture": "#textures"},
+				"east": {"uv": [9.6875, 1.5625, 9.3125, 1.9375], "texture": "#textures"},
+				"south": {"uv": [9.3125, 1.5625, 9.6875, 1.9375], "texture": "#textures"},
+				"west": {"uv": [9.3125, 1.5625, 9.6875, 1.9375], "texture": "#textures"},
+				"up": {"uv": [9.3125, 1.6875, 9.6875, 1.3125], "texture": "#textures"},
+				"down": {"uv": [9.3125, 1.3125, 9.6875, 1.6875], "texture": "#textures", "cullface": "down"}
+			}
+		}
+	]
+}

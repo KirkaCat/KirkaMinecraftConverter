@@ -1,0 +1,113 @@
+
+<!-- I have no idea wtf I'm doing -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kirka Map Converter</title>
+        <style>
+
+            #uhhh-idk {
+                font-family: monospace;
+                color:rgb(255, 255, 255);
+            }
+
+            a:link {
+                color: rgb(255, 248, 143);
+            }
+
+            a:visited {
+                color: rgb(255, 248, 143);
+            }
+
+
+        </style>
+
+    </head>
+    <body id="uhhh-idk" style="background-color:rgb(25, 28, 41);">
+
+        <br>
+        <a href="./index.html">< GO BACK</a>
+        <h1>Kirka x Minecraft Map Converter</h1>
+
+        <h2>
+            Kirka ➜ Minecraft<br>
+            <small>Convert a Kirka map code to a Minecraft .schem file</small>
+        </h2>
+
+        <br>
+
+        Schematic Name: <input type="text" id="schematicName">.schem  (Leave blank to use the name from the map code)<br>
+        <input type="checkbox" id="convertTeam1Spawns" checked="true"> Convert team 1 (blue team) spawn points<br>
+        <input type="checkbox" id="convertTeam2Spawns" checked="true"> Convert team 2 (red team) spawn points<br>
+        <input type="checkbox" id="convertRegions" checked="true"> Convert regions (used for point maps, S&D and the parkour finishline)<br>
+        <input type="checkbox" id="convertCheckpoints" checked="true"> Convert parkour checkpoints<br>
+
+        <br>
+
+        <input type="text" id="mapCode" placeholder="Paste your Kirka map code">
+        <button id="convertButton">Convert</button>
+        <p style="visibility: hidden;" id="convertingText">Converting...</p>
+
+        <br><br>
+        <small>
+            <p>
+                I'm not a web-dev, and I have the artistic talent of a rock. So this is what you get.<br>
+                Enjoy :)
+            </p>
+        </small>
+
+    </body>
+
+    <script src="converter/web/bundle.js"></script>
+    <script>
+
+        document.getElementById("convertButton").onclick = async () => {
+
+            document.getElementById('convertButton').style.visibility = 'hidden';
+            document.getElementById('convertingText').style.visibility = 'visible';
+
+            await new Promise(r => setTimeout(r, 5));
+
+            const convertTeam1Spawns = document.getElementById('convertTeam1Spawns').checked;
+            const convertTeam2Spawns = document.getElementById('convertTeam2Spawns').checked;
+            const convertRegions = document.getElementById('convertRegions').checked;
+            const convertCheckpoints = document.getElementById('convertCheckpoints').checked;
+
+            try {
+
+                const mapData = KirkaMap.Config.clean(document.getElementById('mapCode').value);
+                const mapName = document.getElementById('schematicName').value || ((mapData.mapName ?? "") || "convertedKirkaMap");
+
+                const convertedMapData = ConvertMap.toMinecraft(mapData, {
+                    convertTeam1Spawns: document.getElementById('convertTeam1Spawns').checked,
+                    convertTeam2Spawns: document.getElementById('convertTeam2Spawns').checked,
+                    convertRegions: document.getElementById('convertRegions').checked,
+                    convertCheckpoints: document.getElementById('convertCheckpoints').checked
+                });
+
+                const blobData = new Blob([convertedMapData.buffer])
+                const blobUrl = URL.createObjectURL(blobData);
+
+                const a = document.createElement("a");
+                a.href = blobUrl;
+                a.download = `${mapName}.schem`;
+
+                document.body.appendChild(a);
+                a.click();
+
+                document.body.removeChild(a);
+                URL.revokeObjectURL(blobUrl);
+
+            } catch (ex) {
+                alert(`Error: ${ex.message}`)
+                console.log(ex);
+            } finally {
+                document.getElementById('convertButton').style.visibility = 'visible';
+                document.getElementById('convertingText').style.visibility = 'hidden';
+            }
+        };
+
+    </script>
+
+</html>

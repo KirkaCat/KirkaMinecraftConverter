@@ -1,0 +1,58 @@
+{
+	"parent": "kirka:block/kirka_block",
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [1, 1, 2, 2], "texture": "#textures", "cullface": "north"},
+				"east": {"uv": [1, 1, 2, 2], "texture": "#textures", "cullface": "east"},
+				"south": {"uv": [2, 1, 1, 2], "texture": "#textures", "cullface": "south"},
+				"west": {"uv": [2, 1, 1, 2], "texture": "#textures", "cullface": "west"},
+				"up": {"uv": [1, 1, 2, 2], "rotation": 180, "texture": "#textures", "cullface": "up"},
+				"down": {"uv": [2, 1, 1, 2], "texture": "#textures", "cullface": "down"}
+			}
+		}
+	],
+	"overrides": [
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 1}},
+		{"model": "", "predicate": {"custom_model_data": 2}},
+		{"model": "", "predicate": {"custom_model_data": 3}},
+		{"model": "", "predicate": {"custom_model_data": 4}},
+		{"model": "", "predicate": {"custom_model_data": 5}},
+		{"model": "", "predicate": {"custom_model_data": 6}},
+		{"model": "", "predicate": {"custom_model_data": 7}},
+		{"model": "", "predicate": {"custom_model_data": 8}},
+		{"model": "", "predicate": {"custom_model_data": 9}},
+		{"model": "", "predicate": {"custom_model_data": 10}},
+		{"model": "", "predicate": {"custom_model_data": 11}},
+		{"model": "", "predicate": {"custom_model_data": 12}},
+		{"model": "", "predicate": {"custom_model_data": 13}},
+		{"model": "", "predicate": {"custom_model_data": 14}},
+		{"model": "", "predicate": {"custom_model_data": 15}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "item/test_00", "predicate": {"custom_model_data": 0}},
+		{"model": "item/test_01", "predicate": {"custom_model_data": 1}},
+		{"model": "item/test_02", "predicate": {"custom_model_data": 2}},
+		{"model": "item/test_03", "predicate": {"custom_model_data": 3}},
+		{"model": "item/test_04", "predicate": {"custom_model_data": 4}},
+		{"model": "item/test_05", "predicate": {"custom_model_data": 5}},
+		{"model": "item/test_06", "predicate": {"custom_model_data": 6}},
+		{"model": "item/test_07", "predicate": {"custom_model_data": 7}},
+		{"model": "item/test_08", "predicate": {"custom_model_data": 8}},
+		{"model": "item/test_09", "predicate": {"custom_model_data": 9}},
+		{"model": "item/test_10", "predicate": {"custom_model_data": 10}},
+		{"model": "item/test_11", "predicate": {"custom_model_data": 11}},
+		{"model": "item/test_12", "predicate": {"custom_model_data": 12}},
+		{"model": "item/test_13", "predicate": {"custom_model_data": 13}},
+		{"model": "item/test_14", "predicate": {"custom_model_data": 14}},
+		{"model": "item/test_15", "predicate": {"custom_model_data": 15}},
+		{"model": "", "predicate": {"custom_model_data": 0}},
+		{"model": "", "predicate": {"custom_model_data": 0}}
+	]
+}

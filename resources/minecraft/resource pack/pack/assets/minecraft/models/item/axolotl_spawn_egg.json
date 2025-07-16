@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:item/template_spawn_egg",
+    "overrides": [
+        {"model": "minecraft:block/stone", "predicate": {"custom_model_data": 3}},
+        {"model": "kirka:marker/region", "predicate": {"custom_model_data": 4}},
+        {"model": "minecraft:block/sponge", "predicate": {"custom_model_data": 5}},
+        {"model": "kirka:marker/checkpoint", "predicate": {"custom_model_data": 6}}
+    ]
+}

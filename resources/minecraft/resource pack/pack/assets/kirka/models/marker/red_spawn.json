@@ -1,0 +1,6 @@
+{
+	"parent": "kirka:player_model",
+	"textures": {
+		"skin": "kirka:item/marker/james_red_spawn"
+	}
+}
